@@ -1,72 +1,61 @@
-.donate-container{
-    width: 85%;
-    padding: 20px;
+/** @format */
+
+.donate-container {
+  width: 85%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: auto;
+}
+.donate-wrapper {
+  display: flex;
+}
+
+.donate {
+  padding: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.donate-container h3 {
+  font-weight: 500;
+}
+.donate .donate-btn {
+  padding: 15px 50px;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  background-color: var(--button);
+  background-color: var(--secondary);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.donate-btn:hover {
+  /* background-color: rgb(244, 233, 32); */
+  background-color: var(--third);
+}
+.donate .donate-btn a {
+  text-transform: uppercase;
+  color: var(--primary);
+  line-height: 0.7em;
+}
+
+@media (max-width: 677px) {
+  .donate-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    margin:auto;
-}
-.donate-wrapper{
-    display: flex;
+  }
 }
 
-.donate{
-    padding:20px 20px 0 0;
+@media (max-width: 458px) {
+  .donate {
     display: flex;
     flex-direction: column;
+  }
 }
-.donate-container h3{
-    font-weight: 500;
-}
-.donate .donate-btn{
-    padding:15px 50px;
-    border:none;
-    font-size: 1.2rem;
-    border-radius:25px;
-    background-color:var(--button);
-    background-color:var(--secondary);
-    text-transform: uppercase;
-    cursor:pointer;
-    transition:all .4s;
-}
-.donate-btn:hover{
-    /* background-color: rgb(244, 233, 32); */
-    background-color:  rgb(8, 133, 126);
-}
-.donate .donate-btn a{
-    color:black;
-    color:var(--primary);
-}
-.files a{
-    text-transform:capitalize;
-}
-
-/* *************Responsiveness ************ */
-/* Media queries */
-
-/* @media (max-width:1055px){
-    .donate .donate-btn{
-        padding:15px 50px;
-        
-    }
-} */
-@media (max-width:677px){
-    .donate-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
-@media (max-width:458px){
-    .donate{
-        display: flex;
-        flex-direction: column;
-
-    }
-}
-@media (max-width:265px){
-    .donate h4{
-        font-size: 1.2em;
-    }
+@media (max-width: 265px) {
+  .donate h4 {
+    font-size: 1.2em;
+  }
 }

@@ -1,13 +1,15 @@
-import partners from '../../../assets/partners/partnership.jpg'
+/** @format */
+
+import doted from "../../../assets/about/doted.png";
 
 const PartnerWrapper = () => {
   return (
     <>
       <div className="partners">
-            <img src={partners} alt="partners" />
-        </div>
+        <img src={doted} alt="partners" />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default PartnerWrapper
+export default PartnerWrapper;
