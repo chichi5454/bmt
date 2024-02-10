@@ -1,0 +1,57 @@
+/** @format */
+
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.leaderboard h4 {
+  text-align: center;
+}
+.leaderboard-title-container{
+  display: flex;
+  flex-direction: column;
+}
+.leaderboard-titles {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-weight: 600;
+  gap: 10px;
+  border-bottom:1px solid black;
+}
+
+.leaderboard-content {
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  gap: 20px;
+}
+.leaderboard-content-information .competition-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.competition-list .competition-list-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* media queries */
+@media (max-width: 640px) {
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    gap: 20px;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .leaderboard-titles {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

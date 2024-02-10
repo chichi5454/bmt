@@ -1,0 +1,18 @@
+/** @format */
+.BodyPart {
+  width: 100%;
+}
+.bodypart-container {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .bodypart-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

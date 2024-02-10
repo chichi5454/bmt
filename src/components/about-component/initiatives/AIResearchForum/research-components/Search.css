@@ -1,0 +1,76 @@
+/** @format */
+
+.research-forum-search {
+  display: flex;
+  margin: 0 auto;
+  /* justify-content: space-between; */
+  padding: 0 20px;
+  gap: 70px;
+  width: 100%;
+  flex-direction: row;
+}
+.research-forum-search .research-forum-input {
+  width: 74%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  left: 5px;
+}
+.research-forum-search .research-forum-input input {
+  width: 100%;
+  display: flex;
+  padding: 10px 35px;
+  background-color: #f0ebeb;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+.research-forum-btn {
+  width: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.research-forum-search .research-forum-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+}
+/* media queries */
+@media (max-width: 500px) {
+  .research-forum-search {
+    gap: 50px;
+  }
+  .research-forum-input {
+    width: 75%;
+  }
+  .research-forum-btn {
+    width: 25%;
+  }
+}
+
+@media (max-width: 415px) {
+  .research-forum-search {
+    gap: 20px;
+  }
+  .research-forum-input {
+    width: 55%;
+  }
+  .research-forum-btn {
+    width: 45%;
+  }
+}

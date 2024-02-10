@@ -1,0 +1,32 @@
+/** @format */
+
+.get-in-touch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+  gap:20px;
+}
+.get-in-touch p{
+ text-align:center;
+}
+.get-in-touch button {
+  padding: 15px 20px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* media queries */
+@media (max-width: 600px) {
+  .get-in-touch {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

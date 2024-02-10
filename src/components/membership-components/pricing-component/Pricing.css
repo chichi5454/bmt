@@ -1,0 +1,13 @@
+/** @format */
+
+.our-pricing-components {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.our-pricing-components h2 {
+  text-align: center;
+  padding-top: 20px;
+}
+

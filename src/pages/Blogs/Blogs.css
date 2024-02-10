@@ -1,0 +1,26 @@
+/** @format */
+
+.blogs-page {
+  margin:auto;
+  max-width: 95%;
+  position: relative;
+}
+
+.blogs-page h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.blogs-container{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+  /* **********MEDIA QUERIES************* */
+ @media (max-width:550px){
+     .blogs-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }

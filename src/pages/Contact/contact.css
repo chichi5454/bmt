@@ -1,0 +1,16 @@
+/** @format */
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contact-page h2 {
+  text-align: center;
+}
+.contact-page-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 20px;
+}

@@ -1,0 +1,24 @@
+/** @format */
+
+.membership-page {
+  margin: 20px;
+}
+.membership-page h2 {
+  text-align: center;
+}
+
+/* Membership details */
+.membership-details {
+  margin-top: 20px;
+}
+.membership-details-heading {
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* **********MEDIA QUERIES*********** */
+@media (max-width:400px){
+  .membership-form {
+  padding: 20px;
+ }
+}

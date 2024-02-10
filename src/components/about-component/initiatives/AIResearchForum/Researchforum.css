@@ -1,0 +1,13 @@
+/** @format */
+
+.ai-research-page {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 10px;
+}
+.ai-research-page h3 {
+  text-align: center;
+}

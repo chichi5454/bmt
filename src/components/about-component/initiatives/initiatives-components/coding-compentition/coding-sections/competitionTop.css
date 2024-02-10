@@ -1,0 +1,78 @@
+/* * @format */
+
+.competition-top {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.competition-top {
+  display: flex;
+  flex-direction: row;
+}
+.competition-top .competition-top-input {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-icon{
+  position: absolute;
+  left:5px;
+  /* font-size: .7rem; */
+}
+.competition-top .competition-top-input input {
+  width: 100%;
+  display: flex;
+  padding: 10px 35px;
+  background-color: #f0ebeb;
+  border: none;
+  outline: none;
+  font-size: .9rem;
+}
+.competition-top .competition-top-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 25px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* media queries */
+
+@media (max-width: 850px) {
+  .competition-top .competition-top-input {
+    width: 50%;
+  }
+  .competition-top .competition-top-btn {
+    width: 50%;
+  }
+  .competition-top button {
+    padding: 7px 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .competition-top {
+    justify-content: space-between;
+  }
+  .competition-top .competition-top-one {
+    width: 60%;
+  }
+  .competition-top .competition-top-one input {
+    width: 100%;
+  }
+  .competition-top .competition-top-two {
+    width: 40%;
+  }
+  .competition-top .competition-top-two button {
+    width: 100%;
+  }
+}

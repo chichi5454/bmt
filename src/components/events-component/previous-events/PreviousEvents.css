@@ -1,0 +1,67 @@
+/* * @format
+
+ .upcoming-events {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: small;
+} 
+
+.previousGrid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 20px;
+  margin-bottom: 10rem;
+  margin-top: 20px;
+}
+.firstImage,
+.secondImage {
+  width: 100%;
+  height: 350px;
+}
+.firstImage img,
+.secondImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.firstDetails {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsTime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.details-list li {
+  font-style: italic;
+}
+
+li {
+  margin: 2px;
+  font-style: italic;
+}
+
+.Book-btn {
+  color: var(--primary);
+  font-size: smaller;
+  border-radius: 20px;
+  width: 100px;
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+} */

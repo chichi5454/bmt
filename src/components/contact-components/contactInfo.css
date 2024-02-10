@@ -1,0 +1,25 @@
+/** @format */
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin: 20px auto;
+  width: 100%;
+  padding: 0 20px;
+}
+.contact-info-sales,
+.contact-info-company {
+  text-align: center;
+  font-style: italic;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 465px) {
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

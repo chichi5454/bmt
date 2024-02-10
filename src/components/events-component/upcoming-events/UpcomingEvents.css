@@ -1,0 +1,95 @@
+/** @format */
+
+.upcoming-events {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+.upcoming-events h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+/* Grid container and images */
+.previousGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.firstImage,
+.secondImage {
+  width: 100%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+.firstImage img,
+.secondImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius:0;
+}
+.firstDetails{
+  padding:15px 10px 20px 10px;
+}
+.firstDetails h3 {
+  /* font-size: medium; */
+  font-size: .95em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* time and button details */
+.detailsTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailsTime .date p {
+  font-style:italic;
+  font-size: 0.65em;
+  margin-bottom: 3px;
+}
+
+/* Book button */
+.Book-btn {
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: .75em;
+  font-weight: 500;
+  border:none;
+  background-color:var(--secondary);
+  cursor:pointer;
+  transition:all .4s;
+}
+
+.Book-btn a {
+  color: var(--primary);
+}
+
+/* *********MEDIA QUERIES********** */
+@media screen and (max-width: 730px) {
+
+    .previousGrid {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 376px) {
+    /* time and button details */
+    .detailsTime {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      align-items: center;
+    }
+    .firstDetails h3 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,52 @@
+.board-container{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.board-container h2{
+    text-align: center;
+}
+
+/* Board of Trustee images */
+.board-images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.board-img1, .board-img2{
+    max-width:267px;
+    /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3); */
+}
+
+.board-img1 img, .board-img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+/* ****************MEDIA QUERIES***************** */
+@media (max-width:600px){
+    .board-images{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .board-img1, .board-img2 {
+        max-width: 85%;
+    }
+}
+
+@media (max-width:380px){
+
+    .board-container h2{
+        font-size: 1.4rem;
+    }
+
+}

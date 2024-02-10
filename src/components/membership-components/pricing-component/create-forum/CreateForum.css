@@ -1,0 +1,232 @@
+.create-forum-container{
+    width: 100%;
+    margin-top:20px;
+    padding:20px 20px 0 20px;
+}
+
+/* Create Forum Title */
+.create-forum-container .create-forum-title{
+    display: flex;
+    gap:5px;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.create-forum-container .create-forum-title h4{
+    color:#02BD63;
+}
+.create-forum-container .create-forum-title p{
+    font-size: 1.2em;
+}
+
+/* Create Forum Banner */
+  .create-forum-banner-container{
+    width: 100%;
+    margin: 20px 0;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    overflow: none;
+  }
+  .create-forum-banner-container .create-forum-img{
+    height: 200px;
+    width:70%;
+    padding:10px 10px 10px 0;
+  }
+  .create-forum-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* create-forum-banner-text */
+  .create-forum-banner-text p{
+    padding:0 10px;
+    align-items: center;
+    margin:auto;
+    color:var(--primary);
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: .5px;
+  }
+
+  /* Forum Form */
+  .forum-form-container{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .forum-form{
+    width:500px;
+  }
+  .create-post-form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .create-post-form .form-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+  }
+  .create-post-form .upload-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+  }
+
+  .upload-image .custom-upload-icon{
+    cursor:pointer;
+    font-size: 2.3em;
+  }
+  .create-post-form .form-content label{
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  .create-post-form .form-content .input{
+    padding: 10px;
+    outline:none;
+    border:none;
+    font-family: inherit;
+    padding:10px 20px;
+    background: #D9D9D9;
+    display: flex;
+    /* background: var(--primary); */
+    border-radius: 4px;
+  }
+  .create-post-form .form-content textarea{
+    overflow:none;
+    resize:none;
+    height:100px;
+  }
+
+  .post-btn{
+    padding: 13px 18px;
+    display: flex;
+    width: 130px;
+    align-self:flex-end;
+    justify-content: center;
+    background-color:var(--secondary);
+    cursor:pointer;
+    border:none;
+    color:var(--primary);
+    font-size: 1.0em;
+    cursor:pointer;
+    border-radius:10px;
+    text-transform: uppercase;
+  }
+
+  /* Recommended Forums */
+  .recommended-forums {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .recommended-forums h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .recommended-forums-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding:0 10px;
+  }
+  .recommended-forums-wrapper{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+    background-color: rgba(159, 212, 228, 1);
+    border-radius:10px;
+  }
+  .recommended-forums-wrapper .recommended-forum-img{
+    height: 160px;
+    width:50%;
+  }
+  .recommended-forum-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+  }
+  .recommended-forum-banner-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin:auto;
+    padding:0 5px;
+  }
+  .recommended-forum-banner-text p{
+    color:var(--black-color);
+    font-size: 1.0em;
+    text-transform: capitalize;
+  }
+
+
+  /* Document Side */
+.document-side{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  align-items: flex-end;
+}
+
+.document-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.document-wrapper .side-part ul{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.document-wrapper .side-part ul a{
+  font-style: italic;
+  text-decoration: underline;
+  color:var(--black-color);
+}
+
+
+/* *************MEDIA QUERIES************ */
+@media (max-width: 691px){
+   .forum-form-container{
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 598px){
+  /* Create a Discussion forum form*/
+   .forum-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .forum-form{
+    width:100%;
+  }
+
+  /* Document Side */
+  .document-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  /* Recommended forums */
+   .recommended-forums-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

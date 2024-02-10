@@ -1,0 +1,37 @@
+/** @format */
+
+.banner-dir {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #ffeeef;
+  padding: 20px;
+  margin-top: 10px;
+  color: var(--secondary);
+  box-shadow: 2px 6px 6px rgb(0, 0, 0, 0.09);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-dir p {
+  font-size: 1.2em;
+}
+
+.my-icon {
+  margin-left: 20px;
+  color: var(--secondary);
+  font-size: 1.3rem;
+  transition: all 0.4s;
+}
+.my-icon:hover {
+  color: var(--third);
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+  .banner-dir {
+    font-size: 0.85em;
+  }
+}

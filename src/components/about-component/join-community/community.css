@@ -1,0 +1,45 @@
+/** @format */
+.community-page {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.community-page h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.community-intro{
+  text-align:center;
+  line-height: 1.6;
+}
+
+/* the inquiry part */
+.footer-inquiry-section {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto; 
+
+}
+.footer-inquiry-section p {
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer-inquiry-button{
+  display: flex;
+  margin:15px auto;
+}
+
+.footer-inquiry-button button {
+  padding: 15px 20px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: 600;
+  border:none;
+  border-radius: 10px;
+  cursor:pointer;
+  text-transform: uppercase;
+}
