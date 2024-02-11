@@ -53,7 +53,7 @@ export default function Navbar() {
               {/* drop down */}
               <li>
                 <div className="dropdown">
-                  <li className="dropbtn">
+                  <li className=" dropbtn">
                     Get Involved with Us
                     <i className="fa fa-caret-down"></i>
                   </li>

@@ -101,3 +101,9 @@
     padding: 10px 20px;
   }
 }
+
+@media (max-wudth: 360px) {
+  .overlay-section {
+    width: 100%;
+  }
+}
