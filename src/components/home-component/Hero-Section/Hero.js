@@ -24,7 +24,7 @@ const Hero = () => {
             Become a Member
           </a>
           <a href="/membership" className="hero-btn-link-two">
-            Become a Member
+            Become a Volunteer
           </a>
         </div>
         <i className="fa-solid fa-angles-down fa-beat arrow-icon"></i>
