@@ -1,0 +1,35 @@
+/** @format */
+
+.member-page {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+  width: 100%;
+  gap: 20px;
+}
+.member-page .member-page-top {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--third);
+  color: var(--primary);
+  gap: 20px;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.member-page .member-page-details {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  width: 85%;
+  color: var(--third);
+}
+
+.member-page .member-page-details .member-page-details-par {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  line-height: 1.7rem;
+  padding: 10px;
+  gap: 20px;
+}

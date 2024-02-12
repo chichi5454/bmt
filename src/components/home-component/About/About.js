@@ -29,23 +29,31 @@ const About = () => {
           <ul>
             <li>
               <DoubleArrowIcon className="about-icon" />
-              Service to humanity
+              Humanity
             </li>
             <li>
               <DoubleArrowIcon className="about-icon" />
-              Accountability
+              Impartiality
             </li>
             <li>
               <DoubleArrowIcon className="about-icon" />
-              Community Centered
+              Neutrality
             </li>
             <li>
               <DoubleArrowIcon className="about-icon" />
-              Inclusivity
+              Independence
             </li>
             <li>
               <DoubleArrowIcon className="about-icon" />
-              Innovation
+              Unity
+            </li>
+            <li>
+              <DoubleArrowIcon className="about-icon" />
+              Universality
+            </li>
+            <li>
+              <DoubleArrowIcon className="about-icon" />
+              Voluntary Service
             </li>
           </ul>
         </div>

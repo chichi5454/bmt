@@ -188,6 +188,10 @@
     color: var(--primary);
     padding-left: 0;
   }
+
+  .company-logo h3 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 535px) {
@@ -195,7 +199,7 @@
     font-size: 15px;
   }
   .company-logo h3 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .layer-two {
     padding: 10px 20px;

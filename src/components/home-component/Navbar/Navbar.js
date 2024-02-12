@@ -58,9 +58,9 @@ export default function Navbar() {
                     <i className="fa fa-caret-down"></i>
                   </li>
                   <div className="dropdown-content">
-                    <a href="/">Become a Volunteer</a>
-                    <a href="/">Become a Member</a>
-                    <a href="/">Volunteer Opportunities</a>
+                    <a href="/volunteer">Become a Volunteer</a>
+                    <a href="/member">Become a Member</a>
+                    <a href="/intern">Volunteer Opportunities</a>
                   </div>
                 </div>
               </li>
