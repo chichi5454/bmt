@@ -15,14 +15,27 @@
   gap: 20px;
   width: 100%;
   padding: 30px 20px;
+  font-size: 25px;
+  line-height: 2.7rem;
+}
+.member-page .member-page-top p {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.member-page .member-page-top p a {
+  color: var(--primary);
 }
 
 .member-page .member-page-details {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 70px;
   margin: 20px auto;
   width: 85%;
   color: var(--third);
+  align-items: center;
 }
 
 .member-page .member-page-details .member-page-details-par {
@@ -30,6 +43,19 @@
   flex-direction: column;
   width: 50%;
   line-height: 1.7rem;
-  padding: 10px;
+  padding: 30px;
   gap: 20px;
+  height: 100%;
+}
+.member-page .member-page-details .member-page-details-img {
+  width: 50%;
+  padding: 30px 50px;
+}
+.member-page .member-page-details .member-page-details-img img {
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }

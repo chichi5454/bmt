@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-
+import about1 from "../../../../assets/about/about1.jpg";
 import "./memberpage.css";
 
 const MemberPage = () => {
@@ -40,7 +40,7 @@ const MemberPage = () => {
           </p>
         </div>
         <div className="member-page-details-img">
-          <img src="" alt="member img" />
+          <img src={about1} alt="member img" />
         </div>
       </div>
     </div>
