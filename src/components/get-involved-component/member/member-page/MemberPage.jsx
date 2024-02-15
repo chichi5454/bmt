@@ -9,6 +9,8 @@ const MemberPage = () => {
     <div className="member-page">
       <div className="member-page-top">
         <h2>Join Us </h2>
+        {/* arrow */}
+        {/*  */}
         <p>
           HOME
           <a href="/member" className="member-link">

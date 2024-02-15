@@ -1,0 +1,89 @@
+/** @format */
+
+.individual {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 85%;
+  color: var(--third);
+  gap: 30px;
+}
+
+.individual .individual-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.individual .individual-top h2 {
+  text-align: center !important;
+}
+
+.individual .individual-top p {
+  text-align: center !important;
+}
+
+.individual span {
+  line-height: 1.7rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.individual .individual-page {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.individual .individual-page .packages {
+  border: 2px solid var(--secondary);
+  color: var(--third);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.individual .individual-page .packages .packages-top {
+  color: var(--secondary);
+}
+
+.individual .individual-page .packages .package-two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.individual .individual-page .packages .package-two ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px 20px;
+}
+
+.individual .individual-page .packages .package-two ul li {
+  list-style: disc;
+  list-style-type: square;
+}
+
+.individual .individual-page .packages .package-two button {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.individual .individual-page .packages .package-two button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: 2px solid var(--secondary) !important;
+}
+.individual .individual-page .packages .package-two .last-package {
+  font-size: smaller;
+}
