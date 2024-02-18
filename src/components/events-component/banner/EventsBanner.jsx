@@ -1,8 +1,8 @@
 /** @format */
 
 import "./EventsBanner.css";
-import leadership from "../../../assets/leadership/leadership.jpg";
-import { Link } from "react-router-dom";
+// import leadership from "../../../assets/leadership/leadership.jpg";
+import blog from "../../../assets/blogs/blog.jpg";
 
 const EventsBanner = () => {
   return (
@@ -11,20 +11,20 @@ const EventsBanner = () => {
       <h1>Events</h1>
       <div>
         <div className="mainImage">
-          <img src={leadership} alt="events banner" />
+          <img src={blog} alt="events banner" />
           {/* the text on top of image at banner */}
           <div className="textDetails">
             <div className="text-details-container">
-              <h1>Annual General Meeting 2024</h1>
+              <h1>WORLD REDCROSS DAY</h1>
               <div className="timeline-container">
                 <div className="timeline">
-                  <p>28/3/2024</p>
-                  <p>Nairobi,Kenya</p>
+                  <p>5th MAY 2024</p>
+                  <p>Kenya Red Cross Society Bomet Branch</p>
                 </div>
                 <div className="my-button">
-                  <button className="Register-btn">
-                    <Link to="" >Register</Link>
-                  </button>
+                  <a href="/" className="Register-btn">
+                    Register
+                  </a>
                 </div>
               </div>
             </div>

@@ -1,7 +1,6 @@
 /** @format */
 import BlogsData from "../../components/blogs-components/blogs-data/BlogsData";
 import JoinUs from "../../components/blogs-components/blogs-data/JoinUs";
-import Tags from "../../components/blogs-components/tags/Tags";
 import "./Blogs.css";
 
 const Blogs = () => {
@@ -9,10 +8,9 @@ const Blogs = () => {
     <div className="blogs-page">
       <h2>Blogs</h2>
       <div className="blogs-container">
-        <BlogsData/>
-        <Tags/> 
+        <BlogsData />
       </div>
-      <JoinUs/>
+      <JoinUs />
     </div>
   );
 };

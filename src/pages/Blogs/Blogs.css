@@ -1,26 +1,28 @@
 /** @format */
 
 .blogs-page {
-  margin:auto;
-  max-width: 95%;
+  margin: auto;
+  max-width: 90%;
   position: relative;
+  color: var(--third);
 }
 
 .blogs-page h2 {
   text-align: center;
   margin: 20px 0;
+  color: var(--third);
 }
 
-.blogs-container{
+.blogs-container {
   width: 100%;
   display: flex;
   gap: 20px;
 }
 
-  /* **********MEDIA QUERIES************* */
- @media (max-width:550px){
-     .blogs-container{
-      display: flex;
-      flex-direction: column;
-    }
+/* **********MEDIA QUERIES************* */
+@media (max-width: 550px) {
+  .blogs-container {
+    display: flex;
+    flex-direction: column;
   }
+}

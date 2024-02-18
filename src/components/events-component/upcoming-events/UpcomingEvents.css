@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   margin: 20px auto;
+  color: var(--third);
 }
 .upcoming-events h2 {
   font-size: 1.3em;
@@ -12,13 +13,13 @@
 }
 
 /* Grid container and images */
-.previousGrid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 25px;
-    margin-top: 20px;
+.previousGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
 }
 
 .firstImage,
@@ -32,14 +33,14 @@
   height: 100%;
   object-fit: cover;
   margin-bottom: 10px;
-  border-radius:0;
+  border-radius: 0;
 }
-.firstDetails{
-  padding:15px 10px 20px 10px;
+.firstDetails {
+  padding: 15px 10px 20px 10px;
 }
 .firstDetails h3 {
   /* font-size: medium; */
-  font-size: .95em;
+  font-size: 0.95em;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -51,7 +52,7 @@
   align-items: center;
 }
 .detailsTime .date p {
-  font-style:italic;
+  font-style: italic;
   font-size: 0.65em;
   margin-bottom: 3px;
 }
@@ -60,12 +61,18 @@
 .Book-btn {
   border-radius: 20px;
   padding: 10px 25px;
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: 500;
-  border:none;
-  background-color:var(--secondary);
-  cursor:pointer;
-  transition:all .4s;
+  border: none;
+  background-color: var(--secondary);
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.Book-btn a:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .Book-btn a {
@@ -74,22 +81,21 @@
 
 /* *********MEDIA QUERIES********** */
 @media screen and (max-width: 730px) {
-
-    .previousGrid {
-      display: flex;
-      flex-direction: column;
+  .previousGrid {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 376px) {
-    /* time and button details */
-    .detailsTime {
-      display: flex;
-      flex-direction: column;
-      gap:10px;
-      align-items: center;
-    }
-    .firstDetails h3 {
+  /* time and button details */
+  .detailsTime {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .firstDetails h3 {
     text-align: center;
   }
 }

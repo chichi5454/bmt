@@ -1,10 +1,7 @@
 /** @format */
-import about1 from "../../../assets/about/about1.jpg";
-import about2 from "../../../assets/about/about2.jpg";
+import blog from "../../../assets/blogs/blog.jpg";
 import "./UpcomingEvents.css";
-import { Link } from 'react-router-dom'
-
-
+import { Link } from "react-router-dom";
 
 // ************TO BE CORRECTED...*****************
 const UpcomingEvents = () => {
@@ -16,7 +13,7 @@ const UpcomingEvents = () => {
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={about1} alt="event 1" />
+            <img src={blog} alt="event 1" />
           </div>
           <div className="firstDetails">
             <h3>Current Impact of AI in the Region</h3>
@@ -36,7 +33,7 @@ const UpcomingEvents = () => {
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={about2} alt="event 1" />
+            <img src={blog} alt="event 1" />
           </div>
           <div className="firstDetails">
             <h3>Data Collection via IoT</h3>

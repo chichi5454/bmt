@@ -3,8 +3,7 @@
 // ************TO BE UPDATED WHEN THE REAL DATA COME*************
 
 import "./PreviousEvents.css";
-import about1 from "../../../assets/about/about1.jpg";
-import about2 from "../../../assets/about/about2.jpg";
+import blog from "../../../assets/blogs/blog.jpg";
 import { Link } from "react-router-dom";
 
 const PreviousEvents = () => {
@@ -16,7 +15,7 @@ const PreviousEvents = () => {
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={about1} alt="event 1" />
+            <img src={blog} alt="event 1" />
           </div>
           <div className="firstDetails">
             <h3>Role of Cyber Security</h3>
@@ -36,7 +35,7 @@ const PreviousEvents = () => {
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={about2} alt="event 1" />
+            <img src={blog} alt="event 1" />
           </div>
           <div className="firstDetails">
             <h3>The new era of technology</h3>
