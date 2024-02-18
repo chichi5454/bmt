@@ -3,10 +3,10 @@
 .about {
   padding: 0 30px;
   margin-top: 30px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  width: 90%;
 }
 
 .about-us {
@@ -15,6 +15,8 @@
   flex-wrap: wrap;
   gap: 30px;
   position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 .about-us h2,
 .about-us-wrapper p {
@@ -31,7 +33,7 @@
 
 .about-us-texts {
   /* margin-top: 10px; */
-  max-width: 800px;
+  max-width: 1000px;
 }
 .about-us-texts p {
   line-height: 1.6;

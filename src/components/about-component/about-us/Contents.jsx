@@ -7,7 +7,7 @@ const Contents = () => {
   return (
     <div className="content-links">
       <div className="my-contents">
-        <div className="contents">
+        {/* <div className="contents">
           <h3>Contents</h3>
           <ul>
             <li>
@@ -23,7 +23,7 @@ const Contents = () => {
               <Link to="">Key aspects of our work</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="more-about">
           <h3>More About us</h3>
           <ul>

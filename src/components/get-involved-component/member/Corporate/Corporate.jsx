@@ -21,90 +21,82 @@ const Corporate = () => {
       </span>
       <div className="individual-page">
         <div className="packages">
-          <h3>Youth in School</h3>
-          <p>7 - 18 years.</p>
+          <h1 className="packages-top">Ordinary</h1>
 
           <div className="package-two">
-            <h1>KES 100</h1>
-            <p>Year</p>
+            <h1>KES 50K</h1>
+            <p>/Yr</p>
             <ul>
-              <li>Youth Membership Certificate</li>
               <li> Invite to attend special events</li>
+              <li> Listed in website</li>
+              <li>Listed in the Branch roll of corporates</li>
+              <li>Recognized as school club partner in specified areas</li>
               <li>
-                {" "}
-                Entitled to be briefed & participate in branch activities
+                Entitled to be briefed on KRCS activities in those schools
               </li>
             </ul>
             <button>SIGN UP</button>
-            <p className="last-package">
-              For primary and secondary school students
-            </p>
           </div>
         </div>
 
         <div className="packages">
-          <h3>Youth in School</h3>
-          <p>7 - 18 years.</p>
+          <h1 className="packages-top">Bronze</h1>
 
           <div className="package-two">
-            <h1>KES 100</h1>
-            <p>Year</p>
+            <h1>KES 100K</h1>
+            <p>/Yr</p>
             <ul>
-              <li>Youth Membership Certificate</li>
               <li> Invite to attend special events</li>
+              <li> Listed in website</li>
+              <li>Listed in the Branch roll of corporates</li>
+              <li>Recognized as school club partner in specified areas</li>
               <li>
-                {" "}
-                Entitled to be briefed & participate in branch activities
+                Entitled to be briefed on KRCS activities in those schools
               </li>
+              <li> 5% discount in occupational first aid training</li>
             </ul>
             <button>SIGN UP</button>
-            <p className="last-package">
-              For primary and secondary school students
-            </p>
           </div>
         </div>
 
         <div className="packages">
-          <h3>Youth in School</h3>
-          <p>7 - 18 years.</p>
+          <h1 className="packages-top">Silver</h1>
 
           <div className="package-two">
-            <h1>KES 100</h1>
-            <p>Year</p>
+            <h1>KES 250K</h1>
+            <p>/Yr</p>
             <ul>
-              <li>Youth Membership Certificate</li>
+              <li>Acknowledgement in the KRCS annual report</li>
               <li> Invite to attend special events</li>
-              <li>
-                {" "}
-                Entitled to be briefed & participate in branch activities
-              </li>
+              <li>Listed in website</li>
+              <li>Listed in the Regional roll of corporates</li>
+              <li>5% discount in occupational first aid training</li>
+              <li>10% discount at Boma Hotel</li>
+              <li>Recognized as a partner in a branch</li>
+              <li>Briefed on KRCS activities in the region of registration</li>
             </ul>
             <button>SIGN UP</button>
-            <p className="last-package">
-              For primary and secondary school students
-            </p>
           </div>
         </div>
 
         <div className="packages">
-          <h3>Youth in School</h3>
-          <p>7 - 18 years.</p>
+          <h1 className="packages-top">Gold Premier</h1>
 
           <div className="package-two">
-            <h1>KES 100</h1>
-            <p>Year</p>
+            <h1>KES 500K</h1>
+            <p>/Yr</p>
             <ul>
-              <li>Youth Membership Certificate</li>
+              <li> Invitation to annual partner meetings</li>
+              <li>Acknowledgement in the KRCS annual report</li>
               <li> Invite to attend special events</li>
-              <li>
-                {" "}
-                Entitled to be briefed & participate in branch activities
-              </li>
+              <li>Listed in website</li>
+              <li>Listed in the National roll of corporates</li>
+              <li>5% discount in occupational first aid training</li>
+              <li>10% discount at Boma Hotel</li>
+              <li>Recognized as a partner in a region</li>
+              <li>Briefed on KRCS activities in the region of registration</li>
             </ul>
             <button>SIGN UP</button>
-            <p className="last-package">
-              For primary and secondary school students
-            </p>
           </div>
         </div>
       </div>
