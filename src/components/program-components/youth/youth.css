@@ -1,0 +1,107 @@
+/** @format */
+
+.youth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.youth h1 {
+  color: var(--secondary);
+}
+
+.youth .youth-first {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: flex-start;
+  position: relative;
+}
+.youth .youth-first img {
+  position: sticky;
+  top: 260px;
+  overflow: none;
+  width: 200px;
+}
+
+.youth .youth-second {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.youth .youth-second p {
+  color: var(--third);
+  line-height: 1.7rem;
+}
+
+.youth .youth-second .youth-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.youth .youth-second .youth-details h2 {
+  color: var(--secondary);
+}
+
+.youth .youth-second .youth-details ul {
+  gap: 20px;
+  padding: 5px 20px;
+}
+
+.youth .youth-second .youth-details li {
+  color: var(--secondary);
+  font-style: italic;
+}
+
+.youth .youth-second .youth-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.youth .youth-second .youth-bottom h2 {
+  color: var(--secondary);
+}
+
+.youth .youth-second .youth-bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--third);
+  background-color: #ffeeef;
+  padding: 5px 20px;
+}
+
+.youth .youth-second .youth-bottom ul li {
+  display: flex;
+  flex-direction: row;
+  color: var(--third);
+  font-weight: 600;
+  align-items: center;
+  gap: 10px;
+}
+
+.youth .youth-second .youth-bottom ul li .about-icon {
+  color: var(--secondary);
+}
+
+@media (max-width: 730px) {
+  .youth {
+    display: flex;
+    flex-direction: column;
+  }
+  .youth .youth-first {
+    width: 100%;
+  }
+  .youth .youth-second {
+    width: 100%;
+  }
+}

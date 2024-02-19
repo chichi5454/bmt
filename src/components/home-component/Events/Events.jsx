@@ -88,7 +88,7 @@ const Events = () => {
                 action, the department has created You-Red spaces, that are open
                 to all young people interested in…
               </p>
-              <Link to="/" className="overlay-more-link">
+              <Link to="/youth" className="overlay-more-link">
                 View More
                 <EastIcon className="overlay-more-link-icon" />
               </Link>

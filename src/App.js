@@ -24,6 +24,7 @@ import ResearchForum from "./components/about-component/initiatives/AIResearchFo
 import Member from "./components/get-involved-component/member/Member";
 import Volunteer from "./components/get-involved-component/volunteer/Volunteer";
 import Intern from "./components/get-involved-component/intern/Intern";
+import Youth from "./components/program-components/youth/Youth";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="member" element={<Member />} />
           <Route path="volunteer" element={<Volunteer />} />
           <Route path="intern" element={<Intern />} />
+          <Route path="youth" element={<Youth />} />
           <Route path="about" element={<About />}>
             <Route path="" element={<AboutUs />} />
             <Route path="matter" element={<Matter />} />
