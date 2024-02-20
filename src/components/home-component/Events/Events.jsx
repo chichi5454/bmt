@@ -23,7 +23,7 @@ const Events = () => {
             <img src={eventPhoto} alt="past event" />
             <div className="overlay-viewmore">
               <h2>Explore all the Other Programs by KRCS Bomet Branch</h2>
-              <Link to="" className="past-events-btn-top ">
+              <Link to="/" className="past-events-btn-top ">
                 All Programs
               </Link>
             </div>
@@ -44,7 +44,7 @@ const Events = () => {
                 to save lives, protect livelihoods, and strengthen recovery from
                 disasters and crises
               </p>
-              <Link to="/" className="overlay-more-link">
+              <Link to="/youth" className="overlay-more-link">
                 View More
                 <EastIcon className="overlay-more-link-icon" />
               </Link>
@@ -66,7 +66,7 @@ const Events = () => {
                 ensure affordable, accessible and equitable community-based
                 health care.
               </p>
-              <Link to="/" className="overlay-more-link">
+              <Link to="/youth" className="overlay-more-link">
                 View More
                 <EastIcon className="overlay-more-link-icon" />
               </Link>
@@ -109,7 +109,7 @@ const Events = () => {
                 Kenya Red Cross has special programmes that cater for special
                 needs of vunerable communities accross the country.
               </p>
-              <Link to="/" className="overlay-more-link">
+              <Link to="/youth" className="overlay-more-link">
                 View More
                 <EastIcon className="overlay-more-link-icon" />
               </Link>
@@ -131,7 +131,7 @@ const Events = () => {
                 adequetely perform its mandate, this includes branches and
                 volunteers.
               </p>
-              <Link to="/" className="overlay-more-link">
+              <Link to="/youth" className="overlay-more-link">
                 View More
                 <EastIcon className="overlay-more-link-icon" />
               </Link>
