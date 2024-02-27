@@ -6,12 +6,12 @@ const ContactInfo = () => {
   return (
     <div className="contact-info">
       <div className="contact-info-sales">
-        <p>Sales and Marketing Director</p>
+        <p>Administrator's Office</p>
         <p>Email:sales@ceftech.net</p>
         <p>Tel: +25433862803</p>
       </div>
       <div className="contact-info-company">
-        <p>Business Development</p>
+        <p>Help-Desk Contact</p>
         <p>Email:sales@ceftech.net</p>
         <p>Tel: +25433862803</p>
       </div>

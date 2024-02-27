@@ -64,6 +64,11 @@ export default function Navbar() {
                   </div>
                 </div>
               </li>
+              <li>
+                <Link to="/contact" className="nav-link" onClick={handleClicks}>
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
           <button onClick={handleToggleMenu} className="show-nav-btn">
