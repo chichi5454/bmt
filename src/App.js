@@ -23,6 +23,7 @@ import CodingCompetitions from "./components/about-component/initiatives/initiat
 import ResearchForum from "./components/about-component/initiatives/AIResearchForum/ResearchForum";
 import Member from "./components/get-involved-component/member/Member";
 import Volunteer from "./components/get-involved-component/volunteer/Volunteer";
+import VolunteerPage from "./components/get-involved-component/volunteer/VolunteerPage";
 import Intern from "./components/get-involved-component/intern/Intern";
 import Youth from "./components/program-components/youth/Youth";
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="member" element={<Member />} />
           <Route path="volunteer" element={<Volunteer />} />
+          <Route path="volunteerpage" element={<VolunteerPage />} />
           <Route path="intern" element={<Intern />} />
           <Route path="youth" element={<Youth />} />
           <Route path="about" element={<About />}>

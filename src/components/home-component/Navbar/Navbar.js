@@ -19,6 +19,13 @@ export default function Navbar() {
     setToggleNav(false);
   };
 
+  // dropdown icon
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <>
       <div className="navbar">
@@ -50,18 +57,22 @@ export default function Navbar() {
                   Blog
                 </Link>
               </li>
-              {/* drop down */}
               <li>
                 <div className="dropdown">
-                  <li className=" dropbtn">
+                  <li className="dropbtn" onClick={toggleDropdown}>
                     Get Involved with Us
-                    <i className="fa fa-caret-down"></i>
+                    <i
+                      className={`fa fa-caret-${
+                        dropdownVisible ? "up" : "down"
+                      }`}></i>
                   </li>
-                  <div className="dropdown-content">
-                    <a href="/volunteer">Become a Volunteer</a>
-                    <a href="/member">Become a Member</a>
-                    <a href="/intern">Volunteer Opportunities</a>
-                  </div>
+                  {dropdownVisible && (
+                    <div className="dropdown-content">
+                      <a href="/volunteer">Become a Volunteer</a>
+                      <a href="/member">Become a Member</a>
+                      <a href="/intern">Volunteer Opportunities</a>
+                    </div>
+                  )}
                 </div>
               </li>
               <li>

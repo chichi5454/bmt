@@ -1,7 +1,10 @@
 /** @format */
 
 .membership-page {
-  margin: 20px;
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  background-color: aqua;
 }
 .membership-page h2 {
   text-align: center;
@@ -17,8 +20,8 @@
 }
 
 /* **********MEDIA QUERIES*********** */
-@media (max-width:400px){
+@media (max-width: 400px) {
   .membership-form {
-  padding: 20px;
- }
+    padding: 20px;
+  }
 }
