@@ -184,6 +184,15 @@
     cursor: pointer;
   }
 
+  .dropdown .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    /* top: 300px; */
+    right: -100px;
+    /* margin-right: 150px;
+    align-items: flex-start; */
+  }
+
   .dropdown .dropbtn {
     color: var(--primary);
     padding-left: 0;
