@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Navigation Links Layer*/}
         <div className="layer-two">
           <div className="company-logo">
-            <img src={blogo} alt="red cross bomet branch" />
+            <img src={blogo} alt=" bomet-branch img" />
             <h3>BOMET BRANCH</h3>
           </div>
           <div className={toggleNav ? "mobile-navbar-links" : "navbar-links"}>
