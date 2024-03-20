@@ -41,45 +41,32 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    //************Checking the first name*************
-    if (formData.fname === "") {
+    // Check if form fields are filled
+    if (!formData.fname) {
       setFormErrorMsg((prevError) => ({
         ...prevError,
         fnameErrorMsg: "First name is required",
       }));
-    } else {
-      setFormErrorMsg((prevError) => ({
-        ...prevError,
-        fnameErrorMsg: "",
-      }));
+      return;
     }
 
-    // *****Checking the Company********
-    if (formData.company === "") {
+    if (!formData.company) {
       setFormErrorMsg((prevError) => ({
         ...prevError,
         companyErrorMsg: "Company is required",
       }));
-    } else {
-      setFormErrorMsg((prevError) => ({
-        ...prevError,
-        companyErrorMsg: "",
-      }));
+      return;
     }
-    //************* Checking the Message************
-    if (formData.message === "") {
+
+    if (!formData.message) {
       setFormErrorMsg((prevError) => ({
         ...prevError,
         messageErrorMsg: "Message is required",
       }));
-    } else {
-      setFormErrorMsg((prevError) => ({
-        ...prevError,
-        messageErrorMsg: "",
-      }));
+      return;
     }
 
-    //************* functionality for submitting email form************
+    // Send email using refs
     const serviceId = "service_36z5err";
     const templateId = "lora@2024";
     try {
@@ -110,6 +97,7 @@ const ContactForm = () => {
             onChange={handleInputs}
             placeholder="Enter you First Name"
             ref={nameRef}
+            name="fname" // Add name attribute for handleInputs to work properly
           />
           <small style={{ color: "red" }}>{formErrorMsg.fnameErrorMsg}</small>
         </div>
@@ -121,22 +109,26 @@ const ContactForm = () => {
             onChange={handleInputs}
             placeholder="Enter your Email"
             ref={emailRef}
+            name="company" // Add name attribute for handleInputs to work properly
           />
           <small style={{ color: "red" }}>{formErrorMsg.companyErrorMsg}</small>
         </div>
         <div className="contact-form-details">
           <label htmlFor="message">Message</label>
           <textarea
-            type="text"
             value={formData.message}
             onChange={handleInputs}
             placeholder="Write your message"
             ref={messageRef}
-            className="contact-message"></textarea>
+            className="contact-message"
+            name="message" // Add name attribute for handleInputs to work properly
+          ></textarea>
           <small style={{ color: "red" }}>{formErrorMsg.messageErrorMsg}</small>
         </div>
         <div className="contact-end">
-          <button disabled={loading}>SUBMIT</button>
+          <button disabled={loading} style={{ pointerEvents: "none" }}>
+            SUBMIT
+          </button>
         </div>
       </form>
     </div>

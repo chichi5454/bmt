@@ -7,13 +7,13 @@ const ContactInfo = () => {
     <div className="contact-info">
       <div className="contact-info-sales">
         <p>Administrator's Office</p>
-        <p>Email:sales@ceftech.net</p>
-        <p>Tel: +25433862803</p>
+        <p>Email:kiplangataron7@gmail.com</p>
+        <p>Tel: +254722588499</p>
       </div>
       <div className="contact-info-company">
         <p>Help-Desk Contact</p>
-        <p>Email:sales@ceftech.net</p>
-        <p>Tel: +25433862803</p>
+        <p>Email:bomet@redcross.or</p>
+        <p>Tel: +254708140514</p>
       </div>
     </div>
   );

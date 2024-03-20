@@ -18,37 +18,32 @@ const PreviousEvents = () => {
             <img src={blog} alt="event 1" />
           </div>
           <div className="firstDetails">
-            <h3>Role of Cyber Security</h3>
+            <h3>Basic First Aid Training</h3>
             <div className="detailsTime">
               <div className="date">
-                <p>4-6th March 2021.</p>
-                <p>Location: Singapore</p>
+                <p>4-6th March 2024.</p>
+                <p>Location: Bomet Office</p>
               </div>
               <div className="btn">
                 <button className="Book-btn">
-                  <Link to="">Book Now</Link>
+                  <Link to="contact">Book Now</Link>
                 </button>
               </div>
             </div>
           </div>
         </div>
         {/* First upcoming event */}
-        <div className="firstImage">
-          <div className="image">
-            <img src={blog} alt="event 1" />
-          </div>
-          <div className="firstDetails">
-            <h3>The new era of technology</h3>
-            <div className="detailsTime">
-              <div className="date">
-                <p>4-6th March 2019.</p>
-                <p>Location: Dubai</p>
-              </div>
-              <div className="btn">
-                <button className="Book-btn">
-                  <Link to="">Book Now</Link>
-                </button>
-              </div>
+        <div className="firstDetails">
+          <h3>Basic First Aid Training</h3>
+          <div className="detailsTime">
+            <div className="date">
+              <p>4-6th March 2024.</p>
+              <p>Location: Bomet Office</p>
+            </div>
+            <div className="btn">
+              <button className="Book-btn">
+                <Link to="contact">Book Now</Link>
+              </button>
             </div>
           </div>
         </div>
