@@ -97,7 +97,7 @@ const ContactForm = () => {
             onChange={handleInputs}
             placeholder="Enter you First Name"
             ref={nameRef}
-            name="fname" // Add name attribute for handleInputs to work properly
+            name="fname"
           />
           <small style={{ color: "red" }}>{formErrorMsg.fnameErrorMsg}</small>
         </div>
@@ -109,7 +109,7 @@ const ContactForm = () => {
             onChange={handleInputs}
             placeholder="Enter your Email"
             ref={emailRef}
-            name="company" // Add name attribute for handleInputs to work properly
+            name="company"
           />
           <small style={{ color: "red" }}>{formErrorMsg.companyErrorMsg}</small>
         </div>
@@ -121,14 +121,11 @@ const ContactForm = () => {
             placeholder="Write your message"
             ref={messageRef}
             className="contact-message"
-            name="message" // Add name attribute for handleInputs to work properly
-          ></textarea>
+            name="message"></textarea>
           <small style={{ color: "red" }}>{formErrorMsg.messageErrorMsg}</small>
         </div>
         <div className="contact-end">
-          <button disabled={loading} style={{ pointerEvents: "none" }}>
-            SUBMIT
-          </button>
+          <button disabled={loading}>SUBMIT</button>
         </div>
       </form>
     </div>
