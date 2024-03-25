@@ -4,8 +4,6 @@ import "./contactForm.css";
 import { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-// ********TO BE REFACTORED****
-
 const ContactForm = () => {
   // ref for form
   const emailRef = useRef();
