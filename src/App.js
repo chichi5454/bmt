@@ -26,6 +26,7 @@ import Volunteer from "./components/get-involved-component/volunteer/Volunteer";
 import VolunteerPage from "./components/get-involved-component/volunteer/VolunteerPage";
 import Intern from "./components/get-involved-component/intern/Intern";
 import Youth from "./components/program-components/youth/Youth";
+import World from "./components/blogs-components/blogs-data/wrc-day/World";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="member" element={<Member />} />
           <Route path="volunteer" element={<Volunteer />} />
           <Route path="volunteerpage" element={<VolunteerPage />} />
+          <Route path="world" element={<World />} />
           <Route path="intern" element={<Intern />} />
           <Route path="youth" element={<Youth />} />
           <Route path="about" element={<About />}>

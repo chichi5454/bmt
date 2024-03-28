@@ -45,7 +45,7 @@
 .contact-form-details .contact-message {
   height: 100px;
 }
-.contact-end button {
+.contact-end .contact-button {
   float: right;
   margin-right: 50px;
   padding: 12px 25px;
@@ -55,7 +55,7 @@
   font-style: italic;
   border: none;
   border-radius: 7px;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 /* media queries */

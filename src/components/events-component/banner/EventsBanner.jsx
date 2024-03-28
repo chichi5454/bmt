@@ -18,7 +18,7 @@ const EventsBanner = () => {
               <h1>WORLD REDCROSS DAY</h1>
               <div className="timeline-container">
                 <div className="timeline">
-                  <p>5th MAY 2024</p>
+                  <p>8th MAY 2024</p>
                   <p>Kenya Red Cross Society Bomet Branch</p>
                 </div>
                 <div className="my-button">

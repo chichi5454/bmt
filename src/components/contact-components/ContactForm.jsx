@@ -123,7 +123,9 @@ const ContactForm = () => {
           <small style={{ color: "red" }}>{formErrorMsg.messageErrorMsg}</small>
         </div>
         <div className="contact-end">
-          <button disabled={loading}>SUBMIT</button>
+          <button className="contact-button" disabled={loading}>
+            SUBMIT
+          </button>
         </div>
       </form>
     </div>
