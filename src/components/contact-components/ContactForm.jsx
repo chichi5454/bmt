@@ -1,22 +1,29 @@
 /** @format */
 
-import "./contactForm.css";
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const ContactForm = () => {
-  // ref for form
-  const emailRef = useRef();
-  const nameRef = useRef();
-  const messageRef = useRef();
-  const [loading, setLoading] = useState(false);
+import "./contactForm.css";
 
-  // Get the user inputs
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     fname: "",
     company: "",
     message: "",
   });
+
+  const [formErrorMsg, setFormErrorMsg] = useState({
+    fnameErrorMsg: "",
+    companyErrorMsg: "",
+    messageErrorMsg: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
+
   const handleInputs = (e) => {
     const { name, value } = e.target;
 
@@ -26,20 +33,9 @@ const ContactForm = () => {
     });
   };
 
-  // ****Getting all error messages
-  const [formErrorMsg, setFormErrorMsg] = useState({
-    fnameErrorMsg: "",
-    companyErrorMsg: "",
-    messageErrorMsg: "",
-  });
-
-  // handle Submit function
-  useEffect(() => emailjs.init("2zeK6PBfb_aTdRrdY"), []);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if form fields are filled
     if (!formData.fname) {
       setFormErrorMsg((prevError) => ({
         ...prevError,
@@ -64,7 +60,6 @@ const ContactForm = () => {
       return;
     }
 
-    // Send email using refs
     const serviceId = "service_36z5err";
     const templateId = "lora@2024";
     try {
@@ -76,6 +71,12 @@ const ContactForm = () => {
       });
 
       alert("Email successfully sent.");
+
+      setFormData({
+        fname: "",
+        company: "",
+        message: "",
+      });
     } catch (error) {
       console.log(error);
     } finally {
@@ -85,7 +86,7 @@ const ContactForm = () => {
 
   return (
     <div className="contactForm">
-      <h3>SEND US A MESSAGE </h3>
+      <h3>SEND US A MESSAGE</h3>
       <form className="contact" onSubmit={handleSubmit}>
         <div className="contact-form-details">
           <label htmlFor="firstName">First Name</label>
@@ -93,7 +94,7 @@ const ContactForm = () => {
             type="text"
             value={formData.fname}
             onChange={handleInputs}
-            placeholder="Enter you First Name"
+            placeholder="Enter your First Name"
             ref={nameRef}
             name="fname"
           />
@@ -124,7 +125,7 @@ const ContactForm = () => {
         </div>
         <div className="contact-end">
           <button className="contact-button" disabled={loading}>
-            SUBMIT
+            {loading ? "Sending..." : "SUBMIT"}
           </button>
         </div>
       </form>

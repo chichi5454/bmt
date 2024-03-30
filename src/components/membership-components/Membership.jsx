@@ -1,23 +1,29 @@
 /** @format */
 
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Membership.css";
 
 const Membership = () => {
-  // ref for form
-  const emailRef = useRef();
-  const nameRef = useRef();
-  const messageRef = useRef();
-  const memberRef = useRef();
-  const [loading, setLoading] = useState(false);
-
-  // Get the user inputs
   const [formData, setFormData] = useState({
     fname: "",
     company: "",
     message: "",
   });
+
+  const [formErrorMsg, setFormErrorMsg] = useState({
+    fnameErrorMsg: "",
+    companyErrorMsg: "",
+    messageErrorMsg: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
+  const memberRef = useRef();
+
   const handleInputs = (e) => {
     const { name, value } = e.target;
 
@@ -27,24 +33,13 @@ const Membership = () => {
     });
   };
 
-  // ****Getting all error messages
-  const [formErrorMsg, setFormErrorMsg] = useState({
-    fnameErrorMsg: "",
-    companyErrorMsg: "",
-    messageErrorMsg: "",
-  });
-
-  // handle Submit function
-  useEffect(() => emailjs.init("2zeK6PBfb_aTdRrdY"), []);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if form fields are filled
     if (!formData.fname) {
       setFormErrorMsg((prevError) => ({
         ...prevError,
-        fnameErrorMsg: "First name is required",
+        fnameErrorMsg: "Name is required",
       }));
       return;
     }
@@ -52,7 +47,7 @@ const Membership = () => {
     if (!formData.company) {
       setFormErrorMsg((prevError) => ({
         ...prevError,
-        companyErrorMsg: "Company is required",
+        companyErrorMsg: "Email is required",
       }));
       return;
     }
@@ -65,7 +60,6 @@ const Membership = () => {
       return;
     }
 
-    // Send email using refs
     const serviceId = "service_36z5err";
     const templateId = "lora@2024";
     try {
@@ -77,6 +71,12 @@ const Membership = () => {
       });
 
       alert("Email successfully sent.");
+
+      setFormData({
+        fname: "",
+        company: "",
+        message: "",
+      });
     } catch (error) {
       console.log(error);
     } finally {
@@ -86,7 +86,7 @@ const Membership = () => {
 
   return (
     <div className="contactForm">
-      <h3>SEND US A MESSAGE </h3>
+      <h3>SEND US A MESSAGE</h3>
       <form className="contact" onSubmit={handleSubmit}>
         <div className="contact-form-details">
           <label htmlFor="firstName">Name</label>
@@ -94,7 +94,7 @@ const Membership = () => {
             type="text"
             value={formData.fname}
             onChange={handleInputs}
-            placeholder="Enter you First Name"
+            placeholder="Enter your Name"
             ref={nameRef}
             name="fname"
           />
@@ -124,7 +124,7 @@ const Membership = () => {
           <textarea
             value={formData.message}
             onChange={handleInputs}
-            placeholder="Write your message OR Paste your cover letter"
+            placeholder="Write your message or Paste your cover letter"
             ref={messageRef}
             className="contact-message"
             name="message"></textarea>
@@ -132,16 +132,11 @@ const Membership = () => {
         </div>
         <div className="contact-form-details">
           <label htmlFor="attachments">Resume</label>
-          <input
-            type="file"
-            onChange={handleInputs}
-            placeholder="Enter your Email"
-            ref={memberRef}
-          />
+          <input type="file" onChange={handleInputs} ref={memberRef} />
         </div>
         <div className="contact-end">
           <button className="contact-button" disabled={loading}>
-            SUBMIT
+            {loading ? "Sending..." : "SUBMIT"}
           </button>
         </div>
       </form>
