@@ -1,7 +1,6 @@
 /** @format */
 
 import "./Donate.css";
-import { Link } from "react-router-dom";
 
 const Donate = () => {
   return (
@@ -10,20 +9,20 @@ const Donate = () => {
       <div className="donate-wrapper">
         <div className="donate">
           <button className="donate-btn">
-            <Link>Donate</Link>
+            <a href="/">Donate</a>
           </button>
         </div>
         <div className="donate ">
           <button className="donate-btn">
             <h5>
-              <Link>Become a Member</Link>
+              <a href="/member">Become a Member</a>
             </h5>
           </button>
         </div>
         <div className="donate ">
           <button className="donate-btn">
             <h5>
-              <Link>Access Our Blog</Link>
+              <a href="/blogs">Access Our Blog</a>
             </h5>
           </button>
         </div>

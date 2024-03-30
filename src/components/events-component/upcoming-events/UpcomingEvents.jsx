@@ -1,30 +1,35 @@
 /** @format */
-import blog from "../../../assets/blogs/blog.jpg";
+
 import "./UpcomingEvents.css";
 import { Link } from "react-router-dom";
+import Baby1 from "../../../assets/events/Baby1.jpeg";
 
 // ************TO BE CORRECTED...*****************
 const UpcomingEvents = () => {
   return (
     // the first two images in events page
     <div className="upcoming-events">
-      <h2>Upcoming Events</h2>
+      <h2>YOUTH</h2>
       <div className="previousGrid">
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={blog} alt="event 1" />
+            <img src={Baby1} alt="event 1" />
           </div>
           <div className="firstDetails">
-            <h3>Current Impact of AI in the Region</h3>
+            <h3>Visit to Mogogosiek Baby Home</h3>
             <div className="detailsTime">
               <div className="date">
-                <p>4-6th March 2024.</p>
-                <p>Location: TBA</p>
+                <p>9th March 2024.</p>
+                <p>
+                  <strong>Location:</strong> Mogogosiek baby home
+                  <br />
+                  <span>Konoin Sub county </span>
+                </p>
               </div>
               <div className="btn">
                 <button className="Book-btn">
-                  <Link to="">Book Now</Link>
+                  <Link to="/blogs">Read More</Link>
                 </button>
               </div>
             </div>
@@ -33,18 +38,22 @@ const UpcomingEvents = () => {
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={blog} alt="event 1" />
+            <img src={Baby1} alt="event 1" />
           </div>
           <div className="firstDetails">
-            <h3>Data Collection via IoT</h3>
+            <h3>Visit to Mogogosiek Baby Home</h3>
             <div className="detailsTime">
               <div className="date">
-                <p>4-6th June 2024.</p>
-                <p>Location: TBA</p>
+                <p>9th March 2024.</p>
+                <p>
+                  <strong>Location:</strong> Mogogosiek baby home
+                  <br />
+                  <span>Konoin Sub county </span>
+                </p>
               </div>
               <div className="btn">
                 <button className="Book-btn">
-                  <Link to="">Book Now</Link>
+                  <Link to="/blogs">Read More</Link>
                 </button>
               </div>
             </div>

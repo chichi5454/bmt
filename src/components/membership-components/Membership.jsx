@@ -140,7 +140,7 @@ const Membership = () => {
           />
         </div>
         <div className="contact-end">
-          <button href="/" className="contact-button" disabled={loading}>
+          <button className="contact-button" disabled={loading}>
             SUBMIT
           </button>
         </div>

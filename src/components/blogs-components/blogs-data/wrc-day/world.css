@@ -1,0 +1,38 @@
+/** @format */
+.world {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  gap: 30px;
+  line-height: 2rem;
+}
+
+.world .world-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--primary);
+  padding: 20px 40px;
+  gap: 20px;
+  background-color: var(--third);
+}
+.world .world-banner h2 {
+  background-color: var(--third);
+  color: var(--primary);
+  line-height: 2rem;
+}
+.world .world-banner p {
+  background-color: var(--primary);
+  color: var(--third);
+  padding: 20px;
+  line-height: 2rem;
+}
+
+/* media queries */
+@media (max-width: 520px) {
+  .world .world-banner {
+    display: flex;
+    flex-direction: column;
+  }
+}

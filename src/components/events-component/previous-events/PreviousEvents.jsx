@@ -1,49 +1,56 @@
 /** @format */
 
-// ************TO BE UPDATED WHEN THE REAL DATA COME*************
-
-import "./PreviousEvents.css";
-import blog from "../../../assets/blogs/blog.jpg";
 import { Link } from "react-router-dom";
+import Patron1 from "../../../assets/events/Patron1.jpeg";
+import BFA1 from "../../../assets/events/BFA1.jpeg";
 
 const PreviousEvents = () => {
   return (
     // the first two images in events page
     <div className="upcoming-events">
-      <h2>Previous Events</h2>
+      <h2>KRCS BOMET BRANCH</h2>
       <div className="previousGrid">
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={blog} alt="event 1" />
+            <img src={Patron1} alt="event 1" />
           </div>
           <div className="firstDetails">
-            <h3>Basic First Aid Training</h3>
+            <h3>Patrons' meeting</h3>
             <div className="detailsTime">
               <div className="date">
-                <p>4-6th March 2024.</p>
-                <p>Location: Bomet Office</p>
+                <p>9th March 2024.</p>
+                <p>
+                  <strong>Location:</strong> Famous Gate Hotel Bomet
+                </p>
               </div>
               <div className="btn">
                 <button className="Book-btn">
-                  <Link to="contact">Book Now</Link>
+                  <Link to="/blogs">Read More</Link>
                 </button>
               </div>
             </div>
           </div>
         </div>
         {/* First upcoming event */}
-        <div className="firstDetails">
-          <h3>Basic First Aid Training</h3>
-          <div className="detailsTime">
-            <div className="date">
-              <p>4-6th March 2024.</p>
-              <p>Location: Bomet Office</p>
-            </div>
-            <div className="btn">
-              <button className="Book-btn">
-                <Link to="contact">Book Now</Link>
-              </button>
+        <div className="firstImage">
+          <div className="image">
+            <img src={BFA1} alt="event 1" />
+          </div>
+          <div className="firstDetails">
+            <h3>Grassroot First Aid competitions </h3>
+            <div className="detailsTime">
+              <div className="date">
+                <p>16th March 2024.</p>
+                <p>
+                  <strong>Location:</strong> Bomet University
+                </p>
+              </div>
+              <div className="btn">
+                <button className="Book-btn">
+                  <Link to="/blogs">Read More</Link>
+                </button>
+              </div>
             </div>
           </div>
         </div>

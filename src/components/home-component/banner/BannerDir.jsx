@@ -7,7 +7,7 @@ const BannerDir = () => {
   return (
     <div className="banner-dir">
       <p>Read blog Posts on Current Projects,Events, our Programs, etc...</p>
-      <Link to="">
+      <Link to="/blogs">
         <i className="fa-solid fa-arrow-right fa-beat my-icon"></i>
       </Link>
     </div>

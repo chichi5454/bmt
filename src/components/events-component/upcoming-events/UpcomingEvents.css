@@ -70,12 +70,14 @@
   transition: all 0.4s;
 }
 
-.Book-btn a:hover {
-  background-color: var(--primary);
-  color: var(--secondary);
+.Book-btn a {
+  text-decoration: none;
+  color: var(--primary);
 }
 
-.Book-btn a {
+.Book-btn:hover,
+.Book-btn:hover {
+  background-color: var(--third);
   color: var(--primary);
 }
 

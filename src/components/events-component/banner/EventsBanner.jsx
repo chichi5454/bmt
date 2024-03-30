@@ -2,7 +2,7 @@
 
 import "./EventsBanner.css";
 // import leadership from "../../../assets/leadership/leadership.jpg";
-import blog from "../../../assets/blogs/blog.jpg";
+// import blog from "../../../assets/blogs/blog.jpg";
 
 const EventsBanner = () => {
   return (
@@ -11,7 +11,7 @@ const EventsBanner = () => {
       <h1>Events</h1>
       <div>
         <div className="mainImage">
-          <img src={blog} alt="events banner" />
+          {/* <img src={blog} alt="events banner" /> */}
           {/* the text on top of image at banner */}
           <div className="textDetails">
             <div className="text-details-container">
@@ -19,11 +19,11 @@ const EventsBanner = () => {
               <div className="timeline-container">
                 <div className="timeline">
                   <p>8th MAY 2024</p>
-                  <p>Kenya Red Cross Society Bomet Branch</p>
+                  <p>Kenya Red Cross Society Bomet County Branch</p>
                 </div>
                 <div className="my-button">
-                  <a href="/" className="Register-btn">
-                    Register
+                  <a href="/world" className="Register-btn">
+                    Read More
                   </a>
                 </div>
               </div>

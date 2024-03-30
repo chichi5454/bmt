@@ -106,6 +106,12 @@
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
+.second-grd-about .about-btns button:hover {
+  color: var(--primary);
+  background-color: var(--third);
+}
+
+/* 
 button:hover::after,
 button:hover::before {
   content: "";
@@ -128,20 +134,20 @@ button:hover::before {
 button:hover {
   background-color: var(--primary);
   color: var(--secondary);
-}
-
+} */
+/* 
 @keyframes move-right-side {
   0% {
-    inset: 0.3em 0 0 0.3em; /*top | left */
+    inset: 0.3em 0 0 0.3em; top | left
   }
 
   33% {
-    inset: 0 0.3em 0.3em 0; /*right| bottom*/
+    inset: 0 0.3em 0.3em 0; right| bottom
   }
 
   66% {
-    /* top | right | bottom | left */
-    inset: 1em 0 0 0.5em; /*top | right */
+    top | right | bottom | left
+    inset: 1em 0 0 0.5em; top | right
   }
 
   100% {
@@ -149,7 +155,7 @@ button:hover {
   }
 }
 
-/* Move left Side */
+Move left Side
 
 @keyframes move-left-side {
   0% {
@@ -171,7 +177,7 @@ button:hover {
     right: -1em;
     top: -0.5em;
   }
-}
+} */
 
 /* media queries */
 @media (max-width: 1120px) {
