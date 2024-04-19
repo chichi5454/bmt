@@ -1,6 +1,8 @@
 /** @format */
 
 import "./App.css";
+// import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Navbar from "./components/home-component/Navbar/Navbar";
 import Footer from "./components/home-component/Footer/Footer";
 import Home from "./pages/Home/Home";
@@ -29,6 +31,8 @@ import Youth from "./components/program-components/youth/Youth";
 import World from "./components/blogs-components/blogs-data/wrc-day/World";
 
 function App() {
+  emailjs.init("service_36z5err");
+
   return (
     <div className="App">
       <BrowserRouter>

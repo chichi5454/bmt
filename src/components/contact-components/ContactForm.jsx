@@ -89,7 +89,7 @@ const ContactForm = () => {
       <h3>SEND US A MESSAGE</h3>
       <form className="contact" onSubmit={handleSubmit}>
         <div className="contact-form-details">
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstName">Name</label>
           <input
             type="text"
             value={formData.fname}
