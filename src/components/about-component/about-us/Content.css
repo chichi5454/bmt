@@ -36,11 +36,11 @@
 }
 .more-about a,
 .contents a {
-  color: black;
+  color: var(--secondary);
 }
 .more-about a:hover,
 .contents a:hover {
-  color: var(--secondary);
+  color: black;
 }
 
 /* ****************MEDIA QUERIES***************** */

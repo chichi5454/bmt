@@ -45,6 +45,9 @@ const Contents = () => {
             <li>
               <Link to="founder">Founder</Link>
             </li>
+            <li>
+              <Link to="/world">World RedCross Day</Link>
+            </li>
           </ul>
         </div>
       </div>

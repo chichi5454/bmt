@@ -49,7 +49,7 @@ const BlogsData = () => {
               <div className="blog-details">
                 <div className="details">
                   <p className="blog-title-par">{blog.title}</p>
-                  <p>{blog.date}</p>
+                  {/* <p>{blog.date}</p> */}
                 </div>
 
                 <i class="fa-solid fa-plus"></i>
