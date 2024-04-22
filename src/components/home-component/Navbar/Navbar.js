@@ -70,7 +70,7 @@ export default function Navbar() {
                     <div className="dropdown-content">
                       <a href="/volunteer">Become a Volunteer</a>
                       <a href="/member">Become a Member</a>
-                      <a href="/intern">Volunteer Opportunities</a>
+                      {/* <a href="/intern">Volunteer Opportunities</a> */}
                     </div>
                   )}
                 </div>
