@@ -27,12 +27,30 @@
   width: 100px;
 }
 
+@media (max-width: 750px) {
+  .partners {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 611px) {
   .partners-container {
     margin: 10px auto;
     width: 100%;
   }
 }
+
+@media (max-width: 470px) {
+  .partners {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 @media (max-width: 445px) {
   .partners {
     width: 150px;
