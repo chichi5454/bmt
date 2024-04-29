@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import women1 from "../../../assets/events/women1.jpeg";
+import Vaccine1 from "../../../assets/events/Vaccine1.jpg";
 
 const ProjectEvents = () => {
   return (
@@ -31,18 +32,19 @@ const ProjectEvents = () => {
             </div>
           </div>
         </div>
+
         {/* First upcoming event */}
         <div className="firstImage">
           <div className="image">
-            <img src={women1} alt="event 1" />
+            <img src={Vaccine1} alt="event 1" />
           </div>
           <div className="firstDetails">
-            <h3>International Women's Day</h3>
+            <h3>Poultry Vaccination Initiative</h3>
             <div className="detailsTime">
               <div className="date">
-                <p>9th March 2024.</p>
+                <p> March 2024.</p>
                 <p>
-                  <strong>Location:</strong> Governor's Office Bomet County
+                  <strong>Location:</strong> Kaboson SubCounty
                 </p>
               </div>
               <div className="btn">

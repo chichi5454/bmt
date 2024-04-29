@@ -14,7 +14,7 @@ const BlogDescriptions = ({ singleBlogRoute }) => {
         <p>{singleBlogRoute.summary}</p>
       </div>
       <div className="descriptions">
-        <h4>DESCRIPTION</h4>
+        {/* <h4>DESCRIPTION</h4> */}
         <p>{singleBlogRoute.des1}</p>
         <p>{singleBlogRoute.des2}</p>
         <p>{singleBlogRoute.des3}</p>

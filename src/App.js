@@ -19,7 +19,7 @@ import Founder from "./components/about-component/founder/Founder";
 import Matter from "./components/about-component/matter/Matter";
 import Initiatives from "./components/about-component/initiatives/Initiatives";
 import SingleBlog from "./components/blogs-components/blogs-data/single-blog/SingleBlog";
-import MembershipPage from "./pages/Membership/MembershipPage";
+// import MembershipPage from "./pages/Membership/MembershipPage";
 import Pricing from "./components/membership-components/pricing-component/Pricing";
 import CodingCompetitions from "./components/about-component/initiatives/initiatives-components/coding-compentition/CodingCompetitions";
 import ResearchForum from "./components/about-component/initiatives/AIResearchForum/ResearchForum";
@@ -59,7 +59,7 @@ function App() {
           <Route path="events" element={<Events />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<SingleBlog />} />
-          <Route path="membership" element={<MembershipPage />} />
+          {/* <Route path="membership" element={<MembershipPage />} /> */}
           <Route path="membership/access-our-plans" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
         </Routes>

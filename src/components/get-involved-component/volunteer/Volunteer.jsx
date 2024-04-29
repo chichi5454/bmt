@@ -1,15 +1,16 @@
 /** @format */
 
 import React from "react";
-import blog from "../../../assets/blogs/blog.jpg";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+// import Help1 from "../../../assets/pictorials/Help1.jpeg";
+import Help2 from "../../../assets/pictorials/Help2.jpeg";
 import "./Volunteer.css";
 
 const Volunteer = () => {
   return (
     <div className="volunteer-page">
       <div className="volunteer-page-first">
-        <img src={blog} alt="volunteer-img" />
+        <img src={Help2} alt="volunteer-img" />
         <p>
           As an organization that prioritizes serving others, the Kenya Red
           Cross is constantly looking for individuals who share the same values

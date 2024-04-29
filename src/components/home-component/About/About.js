@@ -2,14 +2,14 @@
 
 import "./About.css";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
-import aboutImg1 from "../../../assets/about/about1.jpg";
 import doted from "../../../assets/about/doted.png";
+import Help2 from "../../../assets/pictorials/Help2.jpeg";
 
 const About = () => {
   return (
     <div className="aboutPage">
       <div className="first-grd-about">
-        <img src={aboutImg1} alt="rescue img" />
+        <img src={Help2} alt="rescue img" />
       </div>
       <div className="doted-pic-container">
         <div className="doted-pic">

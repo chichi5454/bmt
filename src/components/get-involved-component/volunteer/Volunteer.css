@@ -10,9 +10,10 @@
 
 .volunteer-page .volunteer-page-first img {
   display: flex;
-  width: 60%;
+  width: 85%;
   margin: 0 auto;
   padding: 20px 10px;
+  border-radius: 20px;
 }
 
 .volunteer-page p {
