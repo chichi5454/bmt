@@ -7,6 +7,7 @@
   margin: 20px auto;
   width: 100%;
   padding: 0 20px;
+  color: var(--third);
 }
 .contact-info-sales,
 .contact-info-company {
@@ -14,6 +15,7 @@
   font-style: italic;
   line-height: 1.6;
   letter-spacing: 0.3px;
+  gap: 30px;
 }
 
 @media (max-width: 465px) {

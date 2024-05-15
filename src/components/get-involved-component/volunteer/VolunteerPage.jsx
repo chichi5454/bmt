@@ -12,7 +12,7 @@ const VolunteerPage = () => {
           inspire change, and make a difference in the world.
         </p>
         <div className="communityForm-details">
-          <Membership />
+         <Membership/>          
         </div>
       </div>
     </div>
