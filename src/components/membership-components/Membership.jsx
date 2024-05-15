@@ -37,11 +37,11 @@ const Membership = () => {
         <p>For Membership Inquiries, Send your Personal Details</p>
         <form className="for" onSubmit={handleSubmit}>
           <div className="form_group">
-            <label htmlFor="">name</label>
+            <label htmlFor="">Name</label>
             <input ref={nameRef} placeholder="enter your name" />
           </div>
           <div className="form_group">
-            <label htmlFor="">email</label>
+            <label htmlFor="">Email</label>
             <input ref={emailRef} type="email" placeholder="enter your email" />
           </div>
           <div className="form_group">

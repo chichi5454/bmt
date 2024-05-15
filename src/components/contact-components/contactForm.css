@@ -23,9 +23,21 @@
 }
 
 .contact-me .form-page .for .form_group input{
-  width: 70%;
-  background-color: grey;
+  width: 85%;
+  background-color: lightgray;
   border: none;
   height: 1.7rem;
   color: var(--third);
+  padding: 10px;
+}
+
+
+.contact-me .form-page .for .btn{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: var(--secondary);
+  color: var(--primary);
+ border: none;
 }

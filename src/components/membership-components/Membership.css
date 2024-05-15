@@ -1,75 +1,41 @@
-/** @format */
-
-/*  */
-
-.membership-form {
-  /* border: 5px solid var(--secondary); */
-  background-color: var(--third);
-  color: var(--primary);
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px 30px;
+.contact-me{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: var(--third);
+  border: 5px solid var(--secondary);
+  padding: 20px;
+  gap: 10px;
 }
-.membership-form form {
+
+.contact-me .form-page .for{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+
+.contact-me .form-page .for .form_group{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.membership-group {
+
+.contact-me .form-page .for .form_group input{
+  width: 85%;
+  background-color: lightgray;
+  border: none;
+  height: 1.7rem;
+  color: var(--third);
+}
+
+.contact-me .form-page .for .btn{
   display: flex;
   flex-direction: column;
-  gap: 5px;
-}
-.membership-group .membership-label {
-  color: var(--primary);
-}
-
-.membership-group .membership-input {
-  outline: none;
-  border: none;
-  padding: 10px 20px;
-  /* background: #D9D9D9; */
-  background: var(--primary);
-  border-radius: 4px;
-}
-
-/* Sign Up button */
-.footer-community-title1 {
-  display: flex;
-  margin: auto;
-}
-
-.footer-community-title1 button {
-  padding: 15px 20px;
+  padding: 20px;
+  margin: 0 auto;
   background-color: var(--secondary);
   color: var(--primary);
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.form-footer {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  gap: 1rem;
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Sign In */
-.footer-community-details {
-  font-size: 14px;
-}
-.footer-community-details a {
-  text-decoration: underline;
-  color: black;
-}
-.footer-community-title2 a {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset: 0.4rem;
+ border: none;
 }
