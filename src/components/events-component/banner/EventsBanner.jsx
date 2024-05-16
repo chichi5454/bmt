@@ -1,18 +1,19 @@
-/** @format */
 
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import banner from "../../../assets/events/banner.jpg"
+import wrcd from "../../../assets/events/wrcd.webp"
 import "./EventsBanner.css";
-// import leadership from "../../../assets/leadership/leadership.jpg";
-// import blog from "../../../assets/blogs/blog.jpg";
 
 const EventsBanner = () => {
   return (
-    // the first image in events page
     <div className="events-banner">
       <h1>Events</h1>
-      <div>
+      <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
+        {/* Slide 1 */}
         <div className="mainImage">
-          {/* <img src={blog} alt="events banner" /> */}
-          {/* the text on top of image at banner */}
+          <img src={wrcd} alt="Event 1" />
           <div className="textDetails">
             <div className="text-details-container">
               <h1>WORLD REDCROSS DAY</h1>
@@ -30,7 +31,28 @@ const EventsBanner = () => {
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Slide 2 */}
+        <div className="mainImage">
+        <img src={banner} alt="Event 1" />
+          <div className="textDetails">
+            <div className="text-details-container">
+              <h1>Humanity Power Walk Bomet Branch 2024</h1>
+              <div className="timeline-container">
+                <div className="timeline">
+                  <p>8th June 2024</p>
+                 
+                </div>
+                <div className="my-button">
+                  <a href="/blog" className="Register-btn">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Carousel>
     </div>
   );
 };
