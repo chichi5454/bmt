@@ -12,12 +12,12 @@ import Blogs from "./pages/Blogs/Blogs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact/Contact";
 import AboutUs from "./components/about-component/about-us/AboutUs";
-import Leadership from "./components/about-component/leadership/Leadership";
-import History from "./components/about-component/history/History";
-import Community from "./components/about-component/join-community/Community";
-import Founder from "./components/about-component/founder/Founder";
-import Matter from "./components/about-component/matter/Matter";
-import Initiatives from "./components/about-component/initiatives/Initiatives";
+// import Leadership from "./components/about-component/leadership/Leadership";
+// import History from "./components/about-component/history/History";
+// import Community from "./components/about-component/join-community/Community";
+// import Founder from "./components/about-component/founder/Founder";
+// import Matter from "./components/about-component/matter/Matter";
+// import Initiatives from "./components/about-component/initiatives/Initiatives";
 import SingleBlog from "./components/blogs-components/blogs-data/single-blog/SingleBlog";
 // import MembershipPage from "./pages/Membership/MembershipPage";
 import Pricing from "./components/membership-components/pricing-component/Pricing";
@@ -47,12 +47,17 @@ function App() {
           <Route path="youth" element={<Youth />} />
           <Route path="about" element={<About />}>
             <Route path="" element={<AboutUs />} />
-            <Route path="matter" element={<Matter />} />
-            <Route path="join-community" element={<Community />} />
-            <Route path="leadership" element={<Leadership />} />
-            <Route path="our-history" element={<History />} />
-            <Route path="founder" element={<Founder />} />
-            <Route path="join-initiatives" element={<Initiatives />} />
+            {
+  /*
+  <Route path="matter" element={<Matter />} />
+  <Route path="join-community" element={<Community />} />
+  <Route path="leadership" element={<Leadership />} />
+  <Route path="our-history" element={<History />} />
+  <Route path="founder" element={<Founder />} />
+  <Route path="join-initiatives" element={<Initiatives />} />
+  */
+}
+
           </Route>
           <Route path="coding-competition" element={<CodingCompetitions />} />
           <Route path="ai-research-forum" element={<ResearchForum />} />
