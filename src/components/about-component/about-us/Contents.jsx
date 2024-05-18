@@ -7,23 +7,20 @@ const Contents = () => {
   return (
     <div className="content-links">
       <div className="my-contents">
-        {/* <div className="contents">
+         <div className="contents">
           <h3>Contents</h3>
           <ul>
             <li>
-              <Link to="matter">Why do we matter?</Link>
+              <Link to="matter">Know Your Volunteers</Link>
+            </li>
+            <li>
+              <Link to="matter">FAQs</Link>
             </li>
             <li>
               <Link to="">What makes us stand out?</Link>
             </li>
-            <li>
-              <Link to="">How we do our work</Link>
-            </li>
-            <li>
-              <Link to="">Key aspects of our work</Link>
-            </li>
-          </ul>
-        </div> */}
+                     </ul>
+        </div> 
         <div className="more-about">
           <h3>More About us</h3>
           <ul>

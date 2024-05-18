@@ -160,15 +160,17 @@
 }
 
 @media (max-width: 794px) {
-  .mobile-navbar-links {
+ .mobile-navbar-links {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 0;
-  }
+    padding: 40px;
+    gap: 10px;
+      }
 
   .nav-link {
-    color: var(--primary);
+    color: var(--primary) !important;
   }
 
   .navbar-links {
