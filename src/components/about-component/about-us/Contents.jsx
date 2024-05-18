@@ -24,10 +24,7 @@ const Contents = () => {
         <div className="more-about">
           <h3>More About us</h3>
           <ul>
-            <li>
-              <Link to="join-community">Join the community</Link>
-            </li>
-            <li>
+                       <li>
               <Link to="leadership">Leadership</Link>
             </li>
             <li>
@@ -37,7 +34,7 @@ const Contents = () => {
               <Link to="join-initiatives">Initiatives</Link>
             </li>
             <li>
-              <Link to="innovation-club">Innovation clubs</Link>
+              <Link to="innovation-club">Innovation Programs</Link>
             </li>
             <li>
               <Link to="founder">Founder</Link>
