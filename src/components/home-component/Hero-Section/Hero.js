@@ -20,10 +20,10 @@ const Hero = () => {
       <div className="overlay-section">
         <p>Kenya Red Cross Bomet County Branch </p>
         <div className="hero-section-btns">
-          <a href="/membership" className="hero-btn-link-one">
+          <a href="/member" className="hero-btn-link-one">
             Become a Member
           </a>
-          <a href="/membership" className="hero-btn-link-two">
+          <a href="/volunteer" className="hero-btn-link-two">
             Become a Volunteer
           </a>
         </div>
