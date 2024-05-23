@@ -29,6 +29,7 @@ import VolunteerPage from "./components/get-involved-component/volunteer/Volunte
 import Intern from "./components/get-involved-component/intern/Intern";
 import Youth from "./components/program-components/youth/Youth";
 import World from "./components/blogs-components/blogs-data/wrc-day/World";
+import Faq from "./components/faqs/Faq";
 
 function App() {
   emailjs.init("service_36z5err");
@@ -67,6 +68,7 @@ function App() {
           {/* <Route path="membership" element={<MembershipPage />} /> */}
           <Route path="membership/access-our-plans" element={<Pricing />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
         <Footer />
       </BrowserRouter>

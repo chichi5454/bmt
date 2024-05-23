@@ -76,7 +76,7 @@ export default function Navbar() {
                 </div>
               </li>
               <li>
-                <Link to="/contact" className="nav-link" onClick={handleClicks}>
+                <Link to="/faq" className="nav-link" onClick={handleClicks}>
                   FAQs
                 </Link>
               </li>
