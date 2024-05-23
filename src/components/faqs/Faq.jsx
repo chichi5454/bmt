@@ -4,16 +4,16 @@ import "./Faq.css";
 const Faq = () => {
   const faqData = [
     {
-      question: "What is the mission of the Kenya Red Cross Bomet County Branch",
+      question: "What is the mission of the Kenya Red Cross Society",
       answer: "Our mission is to facilitate communities to respond to humanitarian emergencies to alleviate human suffering and work with partners to implement innovative community-driven programmes that transform lives and enhance community resilience."
     },
     {
-      question: "What is the vision of the Kenya Red Cross Bomet County Branch",
+      question: "What is the vision of the Kenya Red Cross Society",
       answer: "Our vision is to be a leading humanitarian organization sustainably promoting the well-being, health, and resilience of communities."
     },
     {
         question: "Who is the current County Coordinator of KRCS Bomet Branch",
-        answer: "The current County Coordinator for both Kericho and Bomet Branch is Naomi Cherotich."
+        answer: "The current County Coordinator for Bomet Branch is Naomi Cherotich."
       },
       {
         question: "Where is KRCS Bomet Branch Offices Located ",
