@@ -16,12 +16,12 @@ const Faq = () => {
         answer: "The current County Coordinator for Bomet Branch is Naomi Cherotich."
       },
       {
-        question: "Where is KRCS Bomet Branch Offices Located ",
-       answer: "Our Offices are located in same compound as County Assembly Bomet, to your left from the main gate"
+        question: "How can i contact KRCS Bomet Branch",
+        answer: "Contact Us via Email:bomet@redcross.or Tel:+254708140514 or Visit Our Offices"
       },
       {
-        question: "How can I get employed at the Kenya Red Cross Bomet County Branch",
-        answer: "First, you need to become a volunteer. Then, apply for open positions at the Red Cross Bomet branch, which are advertised on the headquarters' website."
+        question: "Where KRCS Bomet Branch Offices are Located ",
+       answer: "Our Offices are located at the County Assembly Bomet Grounds, Opposite Kipchimatt Supermarket"
       },
     {
       question: "What are the fundamental principles guiding the Kenya Red Cross Society",
